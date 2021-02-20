@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+int matrix[3][3],i=0,j=0, sum=0; printf("Input the elements of the ma trix\n");
+
+for(i=0; i<3; i++) {
+
+for(j=0; j<3 ; j++)
+
+{ {
+
+printf("Element[%d], [%d]=",i,j); scanf("%d",&matrix[i][j]);
+
+}
+
+printf("The matrix is\n");
+
+for(i=0;i<3;i++)
+
+{
+
+printf("\n");
+
+for(j=0; j<3; j++)
+
+printf("%d\t", matrix[i][j]);
+
+}
+
+printf("\n\n");
+
+printf("The diagonal elements are\n")
+
+for(i=0;i<3;i++)
+
+{
+
+for(j=0; j<3; j++)
+
+{ {
+
+if(i==j)
+
+{
+
+printf("%d\t",matrix[i][j]);}
+
+else
+
+{ {
+
+printf("\t"); }
+
+}
+
+printf("\n");
+
+}
+
+for(i=0;i<3;i++)
+
+{
+
+sum=sum+matrix[i][i];
+
+} printf("The sum of diagonal elements
+
+is %d", sum);
+
+}
